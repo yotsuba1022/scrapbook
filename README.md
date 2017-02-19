@@ -1,3 +1,4 @@
-# My Awesome Book
+# 天書
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+有些問題的解法跟概念我其實不知道該怎麼歸類, 或數量太少以致於不需要另外開一本book, 所以就通通丟在這上面了.
+
