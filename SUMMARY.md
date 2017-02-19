@@ -8,6 +8,6 @@
 * 1.4 SOA
 * [1.5 RESTful](1.4-restful.md)
 * [1.6 Microservice](1.5-microservice.md)
-* 1.7 Microservice v.s. SOA
+* [1.7 Microservice v.s. SOA](1.7-microservice-v.s.-soa.md)
 * [2. Questions & Solutions](question-and-solution.md)
 
