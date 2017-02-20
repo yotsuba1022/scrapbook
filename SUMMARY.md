@@ -11,5 +11,4 @@
 * [1.7 Microservice v.s. SOA](1.7-microservice-v.s.-soa.md)
 * [2. Questions & Solutions](question-and-solution.md)
 * [2.1 海底撈幾根針](2.1.md)
-* 2.2 Fibonacci Series
 
