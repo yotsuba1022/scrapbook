@@ -12,5 +12,5 @@
 * [1.8 Maintain HTTP State](1.8-maintain-http-state.md)
 * [2. Questions & Solutions](question-and-solution.md)
 * [2.1 海底撈幾根針](2.1.md)
-* [Relational Database](relational-database.md)
+* [3. Relational Database](relational-database.md)
 
