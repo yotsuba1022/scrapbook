@@ -11,6 +11,7 @@
 * [1.7 Microservice v.s. SOA](1.7-microservice-v.s.-soa.md)
 * [1.8 Maintain HTTP State](1.8-maintain-http-state.md)
 * [1.8.1 Cookie](1.8.1-cookie.md)
+* [1.8.2 Session](1.8.2-session.md)
 * [2. Questions & Solutions](question-and-solution.md)
 * [2.1 海底撈幾根針](2.1.md)
 * [3. Relational Database](relational-database.md)
