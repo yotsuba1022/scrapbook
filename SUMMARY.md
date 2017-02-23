@@ -7,7 +7,7 @@
 * [1.3 EAI v.s. ESB](1.3-eai-v.s.-esb.md)
 * [1.4 SOA](1.4-soa.md)
 * [1.5 RESTful](1.4-restful.md)
-* [1.6 Microservice](1.5-microservice.md)
+* [1.6 Microservices](1.5-microservice.md)
 * [1.7 Microservice v.s. SOA](1.7-microservice-v.s.-soa.md)
 * [1.8 Maintain HTTP State](1.8-maintain-http-state.md)
 * [1.8.1 Cookie](1.8.1-cookie.md)
