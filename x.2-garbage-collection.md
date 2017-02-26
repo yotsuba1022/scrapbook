@@ -26,5 +26,7 @@
 
 ![](/assets/gc-card-table.png)
 
+現在來看一下young generation的構成:
+
 
 
