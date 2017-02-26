@@ -39,5 +39,9 @@
 4. 當Survivor area滿之後, 會再一次進行GC, 並將倖存的物件移動至另一個Survivor area
 5. 當一個物件在上述這些步驟中生還了, 而且還多次躲過GC, 它就可以移動到old generation了
 
+依照照個流程, 可以得知兩個Survivor area的其中一個必須是空的, 故若你發現兩個Survivor area都有東西或是說兩個Survivor area都是空的, 那你的系統可能已經發生了一些問題了.
+
+![](/assets/young-generation.png)
+
 
 
