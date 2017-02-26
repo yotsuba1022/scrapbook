@@ -16,5 +16,5 @@
 
 Young generation: 大部分的新建物件都會座落在此區塊. 由於多數的物件在建立之後很快就會變成unreachable, 所以這些物件都會被建立在這裡, 然後消失. 對於這樣的情形\(我指在這區塊消失\), 我們稱之為輕度GC\(**minor GC**\).
 
-Old generation: 對於那些沒有變成unreachable然後又活過young generation的物件就會進到這個區塊. 而通常來講, old generation的空間是大於young generation的, 正因為如此, 跟young generation比起來, 這個區塊比較少發生GC. 不過當物件在這個區塊消失時, 我們稱之為重度GC\(major GC\)/完整GC\(full GC\).
+Old generation: 對於那些沒有變成unreachable然後又活過young generation的物件就會進到這個區塊. 而通常來講, old generation的空間是大於young generation的, 正因為如此, 跟young generation比起來, 這個區塊比較少發生GC. 不過當物件在這個區塊消失時, 我們稱之為重度GC\(**major GC**\)/完整GC\(**full GC**\).
 
