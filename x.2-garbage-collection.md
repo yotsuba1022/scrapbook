@@ -12,5 +12,7 @@
 1. 物件很快就會變成unreachable的狀態
 2. old generation對new generation的reference只剩下少量存在時
 
+如此的假設被稱為weak generation hypothesis. 在Java1.3之後的預設JVM裡, 便區分出了young generation與old generation.
+
 
 
