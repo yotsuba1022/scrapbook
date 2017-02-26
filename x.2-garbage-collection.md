@@ -37,6 +37,7 @@
 2. Eden area發生GC後, 倖存下來的物件會移動到Survivor area
 3. 當Eden area再度發生GC, 新的倖存物件會跟上次的倖存物件一起堆放在Survivor area
 4. 當Survivor area滿之後, 會再一次進行GC, 並將倖存的物件移動至另一個Survivor area
+5. 當一個物件在上述這些步驟中生還了, 而且還多次躲過GC, 它就可以移動到old generation了
 
 
 
