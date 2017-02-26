@@ -45,3 +45,7 @@
 
 ![](/assets/young-generation.png)
 
+After minor GC:
+
+![](/assets/young-generation2.png)
+
