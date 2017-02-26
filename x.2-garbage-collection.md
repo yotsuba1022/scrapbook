@@ -14,7 +14,7 @@
 
 如此的假設被稱為weak generation hypothesis. 在Java1.3之後的預設JVM裡, 便區分出了young generation與old generation.
 
-Young generation:
+Young generation: 大部分的新建物件都會座落在此區塊. 由於多數的物件在建立之後很快就會變成unreachable, 所以這些物件都會被建立在這裡, 然後消失. 對於這樣的情形\(我指在這區塊消失\), 我們稱之為輕度GC\(minor GC\). 
 
 Old generation:
 
