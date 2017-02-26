@@ -41,7 +41,7 @@
 
 依照照個流程, 可以得知兩個Survivor area的其中一個必須是空的, 故若你發現兩個Survivor area都有東西或是說兩個Survivor area都是空的, 那你的系統可能已經發生了一些問題了.
 
+下面這張圖是在說明物件因為minor GC而被推放到old generation的過程:
+
 ![](/assets/young-generation.png)
-
-
 
