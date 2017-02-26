@@ -20,5 +20,5 @@ Old generation: 對於那些沒有變成unreachable然後又活過young generati
 
 Permanent generation: 又稱為"method area", 這裡放的基本上都是class, character string, 通常是不會發生物件活過old generation然後又進到這個區塊的. 不過這個區塊也是會有GC發生的, 一樣歸類為major GC.
 
-再來這邊會有一個問題, 如果old generation的物件必須要參照到young generation的物件該怎麼辦呢? 在此要介紹一個新的名詞, 叫做"card table", card table是存在於old generation中的, 其為一個512byte的區塊. 每當一個old generation的物件參照到young generation的物件時, 便將其記錄在此區塊中. 所以當young generation發生GC的時候, 只要來看這張table即可, 而不用再去一個一個掃過所有old generation的物件.
+再來這邊會有一個問題, 如果old generation的物件必須要參照到young generation的物件該怎麼辦呢? 在此要介紹一個新的名詞, 叫做"card table", card table是存在於old generation中的, 其為一個512byte的區塊. 每當一個old generation的物件參照到young generation的物件時, 便將其記錄在此區塊中. 所以當young generation發生GC的時候, 只要來看這張table即可, 而不用再去一個一個掃過所有old generation的物件. 關於card table, 是使用write barrier作為管理的手段的, 目的在加速GC的速度. 儘管這樣會造成一些效能上的損失, 但對於整體major GC的時間來說是有進步的.
 
