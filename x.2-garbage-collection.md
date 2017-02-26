@@ -18,3 +18,5 @@ Young generation: 大部分的新建物件都會座落在此區塊. 由於多數
 
 Old generation: 對於那些沒有變成unreachable然後又活過young generation的物件就會進到這個區塊. 而通常來講, old generation的空間是大於young generation的, 正因為如此, 跟young generation比起來, 這個區塊比較少發生GC. 不過當物件在這個區塊消失時, 我們稱之為重度GC\(**major GC**\)/完整GC\(**full GC**\).
 
+Permanent generation: 又稱為"method area", 這裡放的基本上都是class, character string, 通常是不會發生物件活過old generation然後又進到這個區塊的. 不過這個區塊也是會有GC發生的, 一樣歸類為major GC.
+
