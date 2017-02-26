@@ -26,7 +26,16 @@
 
 ![](/assets/gc-card-table.png)
 
-現在來看一下young generation的構成:
+現在來看一下young generation的構成, 如果依照前面的敘述, 我們可以把young generation想成是物件被創造出來的地方, 而這個地方又三成三個部分:
 
-如果依照前面的敘述, 我們可以把young generation想成是物件被創造出來的地方
+1. Eden area \(伊甸區\) x 1
+2. Survivor area \(生還者區\) x 2
+
+這些區域之間的互動流程如下:
+
+1. 大多數的物件都被建立在Eden area
+2. Eden area發生GC後, 倖存下來的物件會移動到Survivor area
+3. 當Eden area再度發生GC, 新的倖存物件會跟上次的倖存物件一起堆放在Survivor area
+
+
 
