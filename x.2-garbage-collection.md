@@ -28,5 +28,5 @@
 
 現在來看一下young generation的構成:
 
-
+如果依照前面的敘述, 我們可以把young generation想成是物件被創造出來的地方
 
