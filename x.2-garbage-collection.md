@@ -7,5 +7,10 @@
 1. 把reference設成null
 2. 直接呼叫System.gc\(\) -&gt; 沒事真的別用這個
 
+而GC是怎麼樣認定要去收垃圾的呢? 基本上有兩個前提:
+
+1. 物件很快就會變成unreachable的狀態
+2. old generation對new generation的reference只剩下少量存在時
+
 
 
