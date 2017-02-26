@@ -14,5 +14,7 @@
 
 如此的假設被稱為weak generation hypothesis. 在Java1.3之後的預設JVM裡, 便區分出了young generation與old generation.
 
+Young generation:
 
+Old generation:
 
