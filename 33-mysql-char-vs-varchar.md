@@ -6,16 +6,14 @@
 | :--- | :--- |
 | 0~255 | 0~65535 |
 
-  
 從CHAR\(5\)的角度來看儲存:
 
 | Value | Actual Storage |
 | :--- | :---: |
-| 'ap' | 'ap   ' \(這邊多存了3個空白\) |
-| 'april' | 'april' |
-| 'april1' | 'april' |
+| 'ap' | 'ap   ' \(5 bytes, 這邊多存了3個空白\) |
+| 'april' | 'april' \(5 bytes\) |
+| 'april1' | 'april' \(5 bytes\) |
 
-  
 從VARCHAR\(5\)的角度來看儲存:
 
 | Value | Actual Storage |
@@ -26,4 +24,6 @@
 | 'april1' | 'april' \(6 bytes, 多的一個byte是存長度, 不是存字元'1'\) |
 
 -&gt; VARCHAR超過255的話, 會多2 bytes.
+
+
 
