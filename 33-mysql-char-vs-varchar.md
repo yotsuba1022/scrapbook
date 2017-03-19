@@ -1,4 +1,4 @@
-# MySQL CHAR v.s. CARCHAR
+# MySQL CHAR v.s. VARCHAR
 
 
 
