@@ -6,7 +6,7 @@
 | :--- | :--- |
 | 0~255 | 0~65535 |
 
-從CHAR\(5\)的角度來看儲存:
+從**CHAR\(5\)**的角度來看儲存:
 
 | Value | Actual Storage |
 | :--- | :--- |
@@ -14,7 +14,7 @@
 | 'april' | 'april' \(5 bytes\) |
 | 'april1' | 'april' \(5 bytes\) |
 
-從VARCHAR\(5\)的角度來看儲存:
+從**VARCHAR\(5\)**的角度來看儲存:
 
 | Value | Actual Storage |
 | :--- | :--- |
