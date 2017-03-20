@@ -63,6 +63,7 @@ public interface Container {
 public class ContextualizedDependencyLookup implements ManagedComponent {
 
     private Dependency dependency;
+    
     public void performLookup(Container container) {
         this.dependency = (Dependency) container.getDependency("myDependency");
     }
@@ -77,13 +78,15 @@ public class ContextualizedDependencyLookup implements ManagedComponent {
 ```java
 public class ConstructorInjection {
 
-    private Dependency dependency;
-    
+
+private Dependency dependency;
+
     public ConstructorInjection(Dependency dependency) {
         this.dependency = dependency;
     }
-    
-}
+
+
+}
 ```
 
 
