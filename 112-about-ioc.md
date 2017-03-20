@@ -104,5 +104,7 @@ public class SetterInjection {
 }
 ```
 
+#### Injection v.s. Lookup
 
+上面提了這麼多種IoC機制, 那該用哪個呢? 這其實不是很難的一件事, 主要就是看你現在用的container是哪種. 舉例來說, 如果你現在用的是EJB2.1或著是更早的版本, 那你大概就只能用look-up style的IoC了\(via JNDI\). 若是使用Spring, 基本上就是使用injection-style的IoC.
 
