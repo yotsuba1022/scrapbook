@@ -57,7 +57,7 @@ public interface Container {
 }
 ```
 
-所以, 當container準備好可以提供component其所需要的dependency的時候, 它會呼叫各個component上的performLookup\(\)方法, 因此component們就可以透過Container介面去獲得所需的dependencies.
+所以, 當container準備好可以提供component所需要的dependency時, 它會呼叫各個component上的performLookup\(\)方法, 因此component們就可以透過Container介面去獲得所需的dependencies.
 
 ```java
 public class ContextualizedDependencyLookup implements ManagedComponent {
