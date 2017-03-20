@@ -15,7 +15,9 @@ IoC, 又稱控制反轉, 是一種提供配置元件\(component\)相依性與管
 
 以下就針對上面提到的這幾種IoC手段做簡單的說明:
 
-Dependency Pull: 當需要某些相依性的時候, 從某個registry中去pull\(拉\). 這在EJB裡面應該算是很常見的做法 \(e.g. via JNDI API去查找一個EJB component\).
+#### Dependency Pull
+
+定義: 當需要某些相依性的時候, 從某個registry中去pull\(拉\). 這在EJB裡面應該算是很常見的做法 \(e.g. via JNDI API去查找一個EJB component\).
 
 在Spring裡面要做到這種方式也是可以的, 大概會長得像這樣:
 
@@ -28,6 +30,8 @@ public static void main(String[] args) throws Exception {
     mr.render();
 }
 ```
+
+#### Contextualized Dependency Lookup
 
 
 
