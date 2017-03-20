@@ -78,7 +78,6 @@ public class ContextualizedDependencyLookup implements ManagedComponent {
 ```java
 public class ConstructorInjection {
 
-
     private Dependency dependency;
 
     public ConstructorInjection(Dependency dependency) {
