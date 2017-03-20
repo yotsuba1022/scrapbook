@@ -11,6 +11,10 @@ Pros
 * 目的之一是為了寫出易於測試的程式
 * 非侵入性\(non-intrusive\), 讓你的application對Spring的依賴盡可能的減到最小程度
 * 較為輕量級的解決方案
+* IoC將建立物件的職責從程式中抽離到了框架中, 如setter/constructor injection
 
 Cons
+
+* 
+
 
