@@ -99,7 +99,6 @@ public class SetterInjection {
 
     public void setDependency(Dependency dependency) {
         this.dependency = dependency;
-
     }
 
 }
