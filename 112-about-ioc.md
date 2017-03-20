@@ -19,6 +19,8 @@ IoC, 又稱控制反轉, 是一種提供配置元件\(component\)相依性與管
 
 **定義: 當需要某些相依性的時候, 從某個registry中去pull\(拉\). 這在EJB裡面應該算是很常見的做法 \(e.g. via JNDI API去查找一個EJB component\).**
 
+![](/assets/di_001.png)
+
 在Spring裡面要做到這種方式也是可以的, 大概會長得像這樣:
 
 ```java
@@ -29,13 +31,15 @@ public static void main(String[] args) throws Exception {
 
     MessageRenderer mr = (MessageRenderer) factory.getBean("renderer");
     mr.render();
-    
+
 }
 ```
 
 #### Contextualized Dependency Lookup \(CDL\)
 
 **定義: 這跟dependency pull很像, 但對CDL來說, 查找\(look up\)這個動作是針對管理資源的container去執行的, 而不是從一些像是central registry之類的地方去找.**
+
+![](/assets/di_002.png)
 
 CDL通常會要求component去實作一些特定的介面, 譬如說:
 
