@@ -41,7 +41,7 @@ public static void main(String[] args) throws Exception {
 
 ![](/assets/di_002.png)
 
-CDL通常會要求component去實作一些特定的介面, 譬如說:
+CDL通常會要求component去實作一些特定的介面\(可能是container指定的\), 譬如說:
 
 ```java
 public interface ManagedComponent {
