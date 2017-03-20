@@ -73,7 +73,7 @@ public class ContextualizedDependencyLookup implements ManagedComponent {
 
 #### Constructor Dependency Injection
 
-這是DI\(Dependency Injection\)的一種, 透過建構子來提供dependencies. Component會把建構子中的參數視為其dependencies, 而IoC container會在初始化component的時候將這些dependencies傳遞進去.
+**定義: 這是DI\(Dependency Injection\)的一種, 透過建構子來提供dependencies. Component會把建構子中的參數視為其dependencies, 而IoC container會在初始化component的時候將這些dependencies傳遞進去.**
 
 ```java
 public class ConstructorInjection {
@@ -89,6 +89,20 @@ public class ConstructorInjection {
 ```
 
 #### Setter Dependency Injection
+
+定義: DI的一種, IoC container會透過JavaBean-style的setter方法來注入dependency.
+
+```java
+public class SetterInjection {
+
+    private Dependency dependency;
+    
+    public void setDependency(Dependency dependency) {
+        this.dependency = dependency;
+    }
+    
+}
+```
 
 
 
