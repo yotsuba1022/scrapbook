@@ -112,7 +112,7 @@ public class SetterInjection {
 
 再來, 看一下dependency injection, 基本上你只要允許dependency可以透過constructor或是setter進行注入即可, 這對你的component來說基本上是零影響的\(zero impact\).
 
+所以在這裡你可以感覺得到, injection-style可以讓你的類別跟container解耦, 但lookup-style基本上還是會跟container有一定的關係, 如透過實作container指定的特定介面. 這基本上也會對component的測試難易度造成一定程度的影響, 這其實也是Spring後來會變得比較受歡迎的因素之一
 
-
-
+結論, injeciton-style是屬於**被動的\(passive\)**去獲得dependency, 而lookup-style是屬於**主動的\(active\)**去獲得dependency; 而passive code相較於active code, 則相對易於維護.
 
