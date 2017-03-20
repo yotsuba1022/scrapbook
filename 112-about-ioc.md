@@ -39,8 +39,10 @@ CDL通常會要求component去實作一些特定的介面, 譬如說:
 
 ```java
 public interface ManagedComponent {
+
     public void performLookup(Container container);
-}
+
+}
 ```
 
 當實作了這個界面之後, component就可以跟container說: "我想要獲得某些dependency".
@@ -49,9 +51,11 @@ public interface ManagedComponent {
 
 ```java
 public interface Container {
+
     public Object getDependency(String key);
-}
+
+}
 ```
 
-
+所以, 當container準備好可以提供component其所需要的dependency的時候, 它會呼叫各個component上的performLookup\(\)方法, 因此component們就可以透過Container介面去獲得所需的dependencies.
 
