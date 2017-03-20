@@ -88,7 +88,6 @@ public class ConstructorInjection {
         this.dependency = dependency;
     }
 
-
 }
 ```
 
