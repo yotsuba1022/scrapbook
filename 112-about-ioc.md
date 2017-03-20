@@ -90,7 +90,7 @@ public class ConstructorInjection {
 
 #### Setter Dependency Injection
 
-定義: DI的一種, IoC container會透過JavaBean-style的setter方法來注入dependency.
+**定義: DI的一種, IoC container會透過JavaBean-style的setter方法來注入dependency.**
 
 ```java
 public class SetterInjection {
