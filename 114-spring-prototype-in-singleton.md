@@ -177,5 +177,5 @@ public class Validator {
 
 -&gt; 我後來查了一些資料, 我想這個解法是我覺得比較好看的, 首先要include cglib, 這邊的原理是利用AOP scoped proxies在每次RequestHandler被呼叫的時候都注入一個新的validator bean
 
-重新測試![](/assets/1.14-002.png):-&gt; 這樣看起來是有達到效果了, 每個validator看來都是一個新的instance.
+重新測試:![](/assets/1.14-002.png)-&gt; 這樣看起來是有達到效果了, 每個validator看來都是一個新的instance.
 
