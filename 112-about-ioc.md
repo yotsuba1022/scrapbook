@@ -108,3 +108,11 @@ public class SetterInjection {
 
 上面提了這麼多種IoC機制, 那該用哪個呢? 這其實不是很難的一件事, 主要就是看你現在用的container是哪種. 舉例來說, 如果你現在用的是EJB2.1或著是更早的版本, 那你大概就只能用look-up style的IoC了\(via JNDI\). 若是使用Spring, 基本上就是使用injection-style的IoC.
 
+我們再來看一下dependency pull, 你可以發現這種做法基本上是要主動地\(actively\)去從registry獲取reference, 而CDL的方式則是會要求你的類別們去實作特定的介面並且查找dependencies.
+
+再來, 看一下dependency injection, 基本上你只要允許dependency可以透過constructor或是setter進行注入即可, 這對你的component來說基本上是零影響的\(zero impact\).
+
+
+
+
+
