@@ -111,9 +111,9 @@ public class SetterInjection {
 
 上面提了這麼多種IoC機制, 那該用哪個呢? 這其實不是很難的一件事, 主要就是看你現在用的container是哪種. 舉例來說, 如果你現在用的是EJB2.1或著是更早的版本, 那你大概就只能用look-up style的IoC了\(via JNDI\). 若是使用Spring, 基本上就是使用injection-style的IoC.
 
-我們再來看一下dependency pull, 你可以發現這種做法基本上是要主動地\(actively\)去從registry獲取reference, 而CDL的方式則是會要求你的類別們去實作特定的介面並且查找dependencies.
+我們先來看一下dependency pull, 你可以發現這種做法基本上是要主動地\(actively\)去從registry獲取reference, 而CDL的方式則是會要求你的類別們去實作特定的介面並且查找dependencies.
 
-再來, 看一下dependency injection, 基本上你只要允許dependency可以透過constructor或是setter進行注入即可, 這對你的component來說基本上是零影響的\(zero impact\).
+再來, 看一下dependency injection, 基本上你只要允許dependency可以透過constructor或是setter進行注入即可, 這對你的component來說基本上是零影響的\(zero impact\), 換個說法就是比較被動的\(passive\).
 
 所以在這裡你可以感覺得到, injection-style可以讓你的類別跟container解耦, 但lookup-style基本上還是會跟container有一定的耦合, 如透過實作container指定的特定介面. 這基本上也會對component的測試難易度造成一定程度的影響, 這其實也是Spring後來會變得比較受歡迎的因素之一
 
