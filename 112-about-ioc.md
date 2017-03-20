@@ -23,11 +23,13 @@ IoC, 又稱控制反轉, 是一種提供配置元件\(component\)相依性與管
 
 ```java
 public static void main(String[] args) throws Exception {
+
     // get the bean factory
     BeanFactory factory = getBeanFactory();
 
     MessageRenderer mr = (MessageRenderer) factory.getBean("renderer");
     mr.render();
+    
 }
 ```
 
