@@ -25,6 +25,7 @@
 * [3.2 SQL Injection](3.2-sql-injection.md)
 * [3.3 MySQL CHAR v.s. VARCHAR](33-mysql-char-vs-varchar.md)
 * [4. NoSQL](nosql.md)
+* [4.1 SQL v.s. NoSQL](41-sql-vs-nosql.md)
 * [X. JVM](x.-jvm.md)
 * [X.1 JVM System Threads](x.1-jvm-system-threads.md)
 * [X.2 Garbage Collection](x.2-garbage-collection.md)
