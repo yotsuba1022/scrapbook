@@ -11,9 +11,10 @@
 基本上不論是何種Hash, 都具備以下幾點特性:
 
 * 針對相同訊息去做計算, 都會產生出相同的結果
-* 只有message digest, 是不能還原成原來的訊息的, 因此在演算法的設計上必須是**不可逆的**
+* 只有message digest, 是不能還原成原來的訊息的, 因此在演算法的設計上必須是**不可逆的\(Irreversible\)**
+* 很難找到具有相同hash value的任一組不同訊息, 此種特性稱為**強碰撞抵抗力\(Strong collision resistance\)**
 * 不同的訊息所算出來的摘要必須是不同的
-* Hash function又稱為單向函數\(One-way function\)
+* Hash function又稱為**單向函數\(One-way function\)**
 
 儘管上面提到的所有演算法都具備這些特性, 但這邊還是提一下一些要注意的點:
 
