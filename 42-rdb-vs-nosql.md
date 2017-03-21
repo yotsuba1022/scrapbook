@@ -45,5 +45,7 @@ NoSQL: Not Only SQL, 即"非關連式資料庫"的統稱
 * 高並發的資料庫請求: 在一些web2.0的應用中, 由於對資料一致性的要求比較低, 這時候RDB的transaction以及join等特性反而就會在性能方面扯後腿了, 當然這道理不見得所有場景都適用, 這邊有篇[文章](http://artur.ejsmont.org/blog/content/insert-performance-comparison-of-nosql-vs-sql-servers)做了些比較, 挺有趣的, 可以參考看看.
 * 海量資料的分布式儲存: 不是每間公司都付得起Oracle要的錢, 所以利用NoSQL分布式儲存並且部署到廉價的硬體上, 是一種CP值相對高的解決方案, 像MongoDB的sharding已經可以應用到productiong上了\(~~雖然還是被炮轟得滿慘的~~\).
 
+當然, NoSQL不可能解決所有的問題, 對一些業務模型複雜的應用來說, 如BI, ERP等, RDB可能還是比較好的方案.
+
 
 
