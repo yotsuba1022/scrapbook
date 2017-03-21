@@ -2,11 +2,17 @@
 
 這邊我想寫一些RDB跟NoSQL的比較, 所以會先提到一些基本觀念:
 
-CAP Theorem
+#### CAP Theorem
 
-ACID \(For Relational Database\)
+對於一個分布式計算系統來說, 不可能同時滿足以下三點:
 
-BASE \(For Non-Relational Database\)
+* **Consistency**: 系統在執行過某項操作後仍然處於一致的狀態, 在分布式系統中, 更新操作執行成功後所有的用戶都應該讀取到最新的值, 這樣的系統被認為具有強一致性
+* **Availability**: 每一個操作總是能夠在一定的時間內返回結果, 或可想成任何時間點都可讀寫\(可用性\), 即任何一個節點失效都不會影響其它節點繼續運作
+* **Partition tolerance**: 系統若處於網路分區的情況下仍然可以接受請求並處理, 此處的網路分區是指由於某些原因導致網路被分成了若干個孤立區域, 且區域之間不互通. 當然, 這其實也相當於對通信的時限要求, 因為系統若不能在時限內達成資料一致性, 就意味著發生了分區的情況
+
+#### ACID \(For Relational Database\)
+
+#### BASE \(For Non-Relational Database\)
 
 
 
