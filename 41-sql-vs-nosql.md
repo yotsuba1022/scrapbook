@@ -27,7 +27,7 @@
 
 #### BASE \(For Non-Relational Database\)
 
-* **Basically Availabl**e: 系統能夠基本運行, 一直提供服務
+* **Basically Available**: 系統能夠基本運行, 一直提供服務
 * **Soft-state**: 系統不要求一直保持強一致狀態
 * **Eventual consistency**: 系統需要在某一時刻後達到一致性要求
 
