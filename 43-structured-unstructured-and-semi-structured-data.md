@@ -33,7 +33,7 @@
         <name>Link</name>
         <job>N/A</job>
         <weapon>Sword</weapon>
-        <colorOfcolth>green</colorOfcolth>
+        <colorOfColth>green</colorOfColth>
         <price>50</price>
     </item>
 </items>
