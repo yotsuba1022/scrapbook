@@ -5,7 +5,7 @@ NoSQL: **Not Only SQL**, 即"非關連式資料庫"的統稱
 Why NoSQL?  
 簡單說, 是為了解決在web2.0時代出現的三高需求:
 
-1. 對DB的高併發\(high concurrency\)讀寫之要求
+1. 對DB的高併發\(high concurrency\)讀寫之要求, 或是說對low latency讀寫速度的要求
 2. 對海量資料的高效率儲存與存取之需求
 3. 對DB的高可擴展性與高可用性的需求
 
