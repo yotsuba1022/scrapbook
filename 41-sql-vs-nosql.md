@@ -18,10 +18,10 @@
 
 #### ACID \(For Relational Database\)
 
-* Atomicity:
-* Consistency:
-* Isolation:
-* Durability:
+* Atomicity: 原子性, 即transaction中的所有操作, 要就全都成功, 不然就全都失敗
+* Consistency: 一致性, 在transaction的開始與結束時, DB都處於一致的合法狀態, 例如從A的帳戶轉1000塊錢到B的帳戶, 則在這個交易的開始與結束, 總金額是一樣的. 此處的consistency跟CAP theorem裡的consistency是不同的東西, 別搞混了
+* Isolation: 隔離性, 同時進行的transaction間, 互相不影響
+* Durability: 在transaction結束時, 此操作是不可逆的, 即commit之後, 系統將保證資料不會丟失, 即便是系統crash
 
 #### BASE \(For Non-Relational Database\)
 
