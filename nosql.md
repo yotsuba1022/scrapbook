@@ -1,6 +1,6 @@
 # NoSQL
 
-NoSQL: Not Only SQL, 即"非關連式資料庫"的統稱
+NoSQL: **Not Only SQL**, 即"非關連式資料庫"的統稱
 
 Why NoSQL?  
 簡單說, 是為了解決在web2.0時代出現的三高需求:
