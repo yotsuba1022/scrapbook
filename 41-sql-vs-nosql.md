@@ -18,6 +18,11 @@
 
 #### ACID \(For Relational Database\)
 
+* Atomicity:
+* Consistency:
+* Isolation:
+* Durability:
+
 #### BASE \(For Non-Relational Database\)
 
 
