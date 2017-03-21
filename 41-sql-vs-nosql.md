@@ -23,7 +23,7 @@
 * **Isolation**: 隔離性, 同時進行的transaction間, 互相不影響
 * **Durability**: 在transaction結束時, 此操作是不可逆的, 即commit之後, 系統將保證資料不會丟失, 即便是系統crash
 
-題外話, 其實大多數的DB廠商都體會到了DB分區的必要性, 所以引入了一種稱為2PC\(Two-Phase-Commit\)的技術來提供跨越多個DB instance的ACID保證.
+題外話, 其實大多數的DB廠商都體會到了DB分區的必要性, 所以引入了一種稱為**2PC**\(**Two-Phase-Commit**\)的技術來提供跨越多個DB instance的ACID保證.
 
 #### BASE \(For Non-Relational Database\)
 
