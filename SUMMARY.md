@@ -27,6 +27,7 @@
 * [4. NoSQL](nosql.md)
 * [4.1 CAP Theorem, ACID v.s. BASE](41-sql-vs-nosql.md)
 * [4.2 RDB v.s. NoSQL](42-rdb-vs-nosql.md)
+* [4.3 Structured, Unstructured and Semi-structured Data](43-structured-unstructured-and-semi-structured-data.md)
 * [X. JVM](x.-jvm.md)
 * [X.1 JVM System Threads](x.1-jvm-system-threads.md)
 * [X.2 Garbage Collection](x.2-garbage-collection.md)
