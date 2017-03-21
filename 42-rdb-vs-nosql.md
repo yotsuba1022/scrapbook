@@ -43,7 +43,7 @@ NoSQL: Not Only SQL, 即"非關連式資料庫"的統稱
 * DB schema經常發生變化: 常見例子如線上商城, 維護產品的屬性經常要增加新欄位/減少欄位, 這就表示說你的ORM/DAO層的程式和config會需要做更動, 若該table的資料量超過百萬級別, 新增欄位帶來的開銷其實是很可怕的\(想想index重建這種事情\). 這種時候就可以考慮以NoSQL作為解決方案, 以提升DB的可伸縮性.
 * DB table的欄位是複雜資料類型: 對於複雜的資料類型來說, 很多NoSQL會以json-like的方式來儲存\(如MongoDB\), 且提供了原生的支持, 在效率上是比RDB高的.
 * 高並發的資料庫請求: 在一些web2.0的應用中, 由於對資料一致性的要求比較低, 這時候RDB的transaction以及join等特性反而就會在性能方面扯後腿了, 當然這道理不見得所有場景都適用, 這邊有篇[文章](http://artur.ejsmont.org/blog/content/insert-performance-comparison-of-nosql-vs-sql-servers)做了些比較, 挺有趣的, 可以參考看看.
-* 海量資料的分布式儲存: 不是每間公司都付得起Oracle要的錢, 所以利用NoSQL分布式儲存並且部署到廉價的硬體上, 是一種CP值相對高的解決方案, 像MongoDB的sharding已經可以應用到productiong上了\(~~雖然還是被炮轟的滿慘的~~\).
+* 海量資料的分布式儲存: 不是每間公司都付得起Oracle要的錢, 所以利用NoSQL分布式儲存並且部署到廉價的硬體上, 是一種CP值相對高的解決方案, 像MongoDB的sharding已經可以應用到productiong上了\(~~雖然還是被炮轟得滿慘的~~\).
 
 
 
