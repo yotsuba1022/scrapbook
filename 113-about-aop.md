@@ -33,5 +33,10 @@ AOP基本上只有分為以下兩種, 主要的差別就是weaving的時間點�
 
   這種做法的一個小缺點就是效能沒有static AOP那麼好, 但好處是很明顯的, 你不必因為任何一點對aspect的更改就要重新compile你的application.
 
+#### **Proxies in Spring AOP**
+
+* CGLIB proxy
+* JDK dynamic proxy
+
 
 
