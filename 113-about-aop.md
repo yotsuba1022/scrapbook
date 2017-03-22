@@ -14,8 +14,10 @@ AOP的概念是由很多東西組成的, 這邊就一一條列出來:
 * Advice: 在特定的joinpoint上執行的程式就是advice. Advice有很多中, 如before, after等. 在OOP的角度來說, advice是以class中的method的形式存在的.
 * Pointcus: 一個Pointcut就是一組joinpoints的集合\(collection\), 其用意是用來定義何時要執行某個advice. 通常你可以透過複雜的關係去構成\(compose\)pointcuts, 進而在advice被執行時去達到約束的效果.
 * Aspects: 一個aspect就是advice跟pointcuts的組合\(combination\). 這個組合定義了一段需在application中某處被執行的邏輯.
-* Weaving:
-* Target:
+* Weaving: 這就是實際上在合適的時間點於application中插入aspects的流程. 依據AOP類型的不同, 可以分為以下兩種:
+  * Static AOP: 就是在compile time完成, 通常會被當作是build process的額外步驟
+  * Dynamic AOP: 在runtime時期動態完成
+* Target: 
 * Introduction:
 
 #### Types of AOP
