@@ -18,7 +18,7 @@ AOP的概念是由很多東西組成的, 這邊就一一條列出來:
   * Static AOP: 就是在compile time完成, 通常會被當作是build process的額外步驟
   * Dynamic AOP: 在runtime時期動態完成
   * AspectJ提供: Load-time weaving \(LTW\), 這比較複雜, 基本上就是當bytecode被classloader loaded的時候進行縫合
-* Target: 
+* Target: 當一個物件的execution flow被某些AOP process更改了, 這個物件就稱為target object \(a.k.a. advised object\). 
 * Introduction:
 
 #### Types of AOP
