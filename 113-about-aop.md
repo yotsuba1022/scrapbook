@@ -12,8 +12,8 @@ AOP的概念是由很多東西組成的, 這邊就一一條列出來:
 
 * Joinpoints: 所謂的jointpoint就是在application執行的過程中被良好定義\(well-defined\)的一個點. 典型的joinpoints如一個對方法的呼叫, 類別的初始化或物件實例化等. Joinpoint是AOP的核心概念且其定義了你可以於application中的何處透過AOP插入額外的邏輯.
 * Advice: 在特定的joinpoint上執行的程式就是advice. Advice有很多中, 如before, after等. 在OOP的角度來說, advice是以class中的method的形式存在的.
-* Pointcus: 一個Pointcut就是一組joinpoints的集合\(collection\), 其用意是用來定義何時要執行某個advice. 通常你可以透過複雜的關係去組成\(compose\)pointcuts, 進而在advice被執行時去達到約束的效果.
-* Aspects:
+* Pointcus: 一個Pointcut就是一組joinpoints的集合\(collection\), 其用意是用來定義何時要執行某個advice. 通常你可以透過複雜的關係去構成\(compose\)pointcuts, 進而在advice被執行時去達到約束的效果.
+* Aspects: 一個aspect就是advice跟pointcuts的組合\(combination\). 這個組合定義了一段需在application中某處被執行的邏輯.
 * Weaving:
 * Target:
 * Introduction:
