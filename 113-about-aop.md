@@ -17,7 +17,7 @@ AOP的概念是由很多東西組成的, 這邊就一一條列出來:
 * Weaving: 這就是實際上在合適的時間點於application中插入aspects的流程. 縫合\(weave\)的時間點基本上可以分為三種:
   * Static AOP: 就是在compile time完成, 通常會被當作是build process的額外步驟
   * Dynamic AOP: 在runtime時期動態完成
-  * AspectJ提供: Load-time weaving \(LTW\)
+  * AspectJ提供: Load-time weaving \(LTW\), 這比較複雜, 基本上就是當bytecode被classloader loaded的時候進行縫合
 * Target: 
 * Introduction:
 
