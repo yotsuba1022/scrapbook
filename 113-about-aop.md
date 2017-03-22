@@ -38,5 +38,14 @@ AOP基本上只有分為以下兩種, 主要的差別就是weaving的時間點�
 * CGLIB proxy
 * JDK dynamic proxy
 
+#### Advice in Spring
+
+* Before
+* After returning
+* After \(finally\)
+* Around
+* Throws
+* Introduction
+
 
 
