@@ -23,8 +23,8 @@ AOP的概念是由很多東西組成的, 這邊就一一條列出來:
 
 #### Types of AOP
 
-* Static AOP
-* Dynamic AOP
+* Static AOP: 
+* Dynamic AOP:
 
 
 
