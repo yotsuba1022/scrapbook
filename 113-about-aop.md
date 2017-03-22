@@ -8,5 +8,7 @@ AOP, 又名Aspect-Oriented Programming, 中文有人說方面\(側面\)導向, �
 
 #### AOP Basics
 
+#### Types of AOP
+
 
 
