@@ -23,6 +23,8 @@ AOP的概念是由很多東西組成的, 這邊就一一條列出來:
 
 #### Types of AOP
 
+AOP基本上只有分為以下兩種, 主要的差別就是weaving的時間點以及weaving的手段
+
 * Static AOP: 
 * Dynamic AOP:
 
