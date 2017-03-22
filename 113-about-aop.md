@@ -25,8 +25,10 @@ AOP的概念是由很多東西組成的, 這邊就一一條列出來:
 
 AOP基本上只有分為以下兩種, 主要的差別就是weaving的時間點以及weaving的手段
 
-* Static AOP: 大多數的AOP都是static的, 對static AOP來說, weaving就是build process的額外步驟. 用Java的角度來看, 透過static AOP達成的weaving基本上都會更改到application的bytecode, 若有必要的話, 也會改變或著是擴張原本的code. 很明顯地, 這是效能比較好的做法, 畢竟最終的結果就是bytecode, 而不必於runtime的時候去決定advice的執行時機.
-* Dynamic AOP:
+* **Static AOP**: 大多數的AOP都是static的, 對static AOP來說, weaving就是build process的額外步驟. 用Java的角度來看, 透過static AOP達成的weaving基本上都會更改到application的bytecode, 若有必要的話, 也會改變或著是擴張原本的code. 很明顯地, 這是效能比較好的做法, 畢竟最終的結果就是bytecode, 而不必於runtime的時候去決定advice的執行時機.
+  這種做法的缺點就是不管你對aspect做了多少變更, 儘管只是多加了一個很小的joinpoint, 你都必須要重新compile你的application, 最常見的例子就是AspectJ的compile-time weaving了.
+
+* **Dynamic AOP**: 
 
 
 
