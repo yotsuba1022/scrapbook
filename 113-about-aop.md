@@ -29,8 +29,8 @@ AOP基本上只有分為以下兩種, 主要的差別就是weaving的時間點�
 
   這種做法的缺點就是不管你對aspect做了多少變更, 儘管只是多加了一個很小的joinpoint, 你都必須要重新compile你的application, 最常見的例子就是AspectJ的compile-time weaving了.
 
-* **Dynamic AOP**: Spring AOP就是屬於這一種, weaving的動作會在runtime的時候動態地執行. 至於細節如何達成, 則要依實作而定. 對Spring來說, 主流的方式就是為所有的advised object創造proxy, 並且允許advice在需要的時候被呼叫.  
-  
+* **Dynamic AOP**: Spring AOP就是屬於這一種, weaving的動作會在runtime的時候動態地執行. 至於細節如何達成, 則要依實作而定. 對Spring來說, 主流的方式就是**為所有的advised object創造proxy**, 並且允許advice在需要的時候被呼叫.
+
   這種做法的一個小缺點就是效能沒有static AOP那麼好, 但好處是很明顯的, 你不必因為任何一點對aspect的更改就要重新compile你的application.
 
 
