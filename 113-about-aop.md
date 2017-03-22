@@ -10,15 +10,13 @@ AOP, 又名Aspect-Oriented Programming, 中文有人說方面\(側面\)導向, �
 
 AOP的概念是由很多東西組成的, 這邊就一一條列出來:
 
-* Joinpoints:
-* Advice:
+* Joinpoints: 所謂的jointpoint就是在application執行的過程中被良好定義\(well-defined\)的一個點. 典型的joinpoints如一個對方法的呼叫, 類別的初始化或物件實例化等. Joinpoint是AOP的核心概念且其定義了你可以於application中的何處透過AOP插入額外的邏輯.
+* Advice: 
 * Pointcus:
 * Aspects:
 * Weaving:
 * Target:
 * Introduction:
-
-
 
 #### Types of AOP
 
