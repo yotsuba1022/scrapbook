@@ -14,7 +14,7 @@ AOP的概念是由很多東西組成的, 這邊就一一條列出來:
 * **Advice**: 在特定的joinpoint上執行的程式就是advice. Advice有很多中, 如before, after等. 在OOP的角度來說, advice是以class中的method的形式存在的.
 * **Pointcus**: 一個Pointcut就是一組joinpoints的集合\(collection\), 其用意是用來定義何時要執行某個advice. 通常你可以透過複雜的關係去構成\(compose\)pointcuts, 進而在advice被執行時去達到約束的效果.
 * **Aspects**: 一個aspect就是advice跟pointcuts的組合\(combination\). 這個組合定義了一段需在application中某處被執行的邏輯.
-* **Weaving**: 這就是實際上在合適的時間點於application中插入aspects的流程. 縫合\(weave\)的時間點基本上可以分為三種:
+* **Weaving**: 這就是實際上在合適的時間點於application中插入aspects的流程. 縫合\(weaving\)的時間點基本上可以分為三種:
   * **Compile time**: Static AOP的做法, 通常會被當作是build process的額外步驟
   * **Runtime**: Dynamic AOP的做法
   * **Load-time weaving \(LTW\)**: AspectJ提供, 這比較複雜, 基本上就是當bytecode被classloader load的時候進行縫合
