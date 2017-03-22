@@ -19,7 +19,7 @@
 * [1.13 Spring - Pros and Cons](113-spring-pros-and-cons.md)
 * [1.14 Spring - Prototype in Singleton](114-spring-prototype-in-singleton.md)
 * [1.15 HTTP v.s. SPDY](115-http-vs-spdy.md)
-* [1.16 OAuth 2.0](116-oauth-20.md)
+* [1.16 Securing REST Services](116-oauth-20.md)
 * [2. Questions & Solutions](question-and-solution.md)
 * [2.1 海底撈幾根針](2.1.md)
 * [3. Relational Database](relational-database.md)
