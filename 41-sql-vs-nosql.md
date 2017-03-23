@@ -16,7 +16,7 @@
 * 寫多份資料就會出現資料一致性的問題\(consistency\)
 * 而資料一致性的問題又會延伸出性能的問題
 
-而根據Ryan Barrett的演講"Transaction Across DataCenter"中提到的一張圖, 該圖如下:
+而根據Ryan Barrett的演講"[Transaction Across DataCenter](https://www.youtube.com/watch?v=srOgpXECblk)"中提到的一張圖, 該圖如下:
 
 ![](/assets/CAP.png)
 
