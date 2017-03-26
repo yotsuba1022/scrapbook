@@ -18,6 +18,29 @@ g跟p會是兩邊先溝通好的機制.
 
 有了上述公式以後, 接下來描述DH演算法的運作流程:
 
-1. 
+1. Alice與Bob協定使用p = 23以及g = 5
 
+2. Alice選擇一個secret number\(整數\), a = 6, 計算A = g^a mod p並傳給Bob
+
+   1. A = 5^6 mod 23 = 8
+
+3. Bob選擇一個secret number\(整數\), b = 15, 計算B = g^b mod p然後傳給Alice
+
+   1. B = 5^15 mod 23 = 19
+
+4. Alice計算s = B^a mod p
+
+   1. 19^6 mod 23 = 2
+
+5. Bob計算s = A^b mod p
+
+   1. 8^15 mod 23 = 2
+
+這邊你可以看到, Alice跟Bob都得到了相同的值, 這是因為在mod p之下, g^ab = g^ba.
+
+![](/assets/DH-formula2.png)
+
+或是這樣看:
+
+![](/assets/DH-formula3.png)
 
