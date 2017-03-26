@@ -4,6 +4,8 @@
 
 講白話一點, DH演算法就是在教你如何"安全地"告訴對方密碼而不用擔心密碼被竊聽. 通過在public channel交換一個資訊, 就可以建立一個可用於在public channel上安全通信的shared secret.
 
+以下是擷取自wiki的DH流程簡圖:
+
 ![](/assets/DH-architecture.png)
 
 最早提出的這個協定使用如下的離散對數\(Discrete Logarithm\)公式來做運算:
