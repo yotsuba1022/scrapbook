@@ -23,6 +23,7 @@
 * [1.17 HTTP v.s. SPDY](115-http-vs-spdy.md)
 * [1.18 HTTP/2](117-http2.md)
 * [1.19 Securing REST Services](116-oauth-20.md)
+* [1.20 Conway's law](120-conways-law.md)
 * [2. Questions & Solutions](question-and-solution.md)
 * [2.1 海底撈幾根針](2.1.md)
 * [3. Relational Database](relational-database.md)
