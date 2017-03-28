@@ -12,7 +12,7 @@
   ![](/assets/monolithic_team.png)
 
 * 將monolithic解耦成microservices, 每個團隊都去開發、測試和發布自己的服務, 彼此之間互不干擾, 系統效率也可得到改善  
-  ![](/assets/microservices_team.png)
+  ![](/assets/microservices_team.png)  
 
 
 
