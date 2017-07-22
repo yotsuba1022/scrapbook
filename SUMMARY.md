@@ -27,6 +27,7 @@
 * [1.21 大型網站架構演化發展歷程](121-da-xing-wang-zhan-jia-gou-yan-hua-fa-zhan-li-cheng.md)
 * [2. Questions & Solutions](question-and-solution.md)
 * [2.1 海底撈幾根針](2.1.md)
+* [2.2 塞不進去](sai-bu-jin-qu.md)
 * [3. Relational Database](relational-database.md)
 * [3.1 SQL Join Type](3.1-sql-join-type.md)
 * [3.2 SQL Injection](3.2-sql-injection.md)
