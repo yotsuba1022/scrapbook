@@ -25,6 +25,7 @@
 * [1.19 Securing REST Services](116-oauth-20.md)
 * [1.20 Conway's Law](120-conways-law.md)
 * [1.21 大型網站架構演化發展歷程](121-da-xing-wang-zhan-jia-gou-yan-hua-fa-zhan-li-cheng.md)
+* [1.22 Java泛型在方法簽名中的用法](122-javafan-xing-zai-fang-fa-qian-ming-zhong-de-yong-fa.md)
 * [2. Questions & Solutions](question-and-solution.md)
 * [2.1 海底撈幾根針](2.1.md)
 * [2.2 塞不進去](sai-bu-jin-qu.md)
