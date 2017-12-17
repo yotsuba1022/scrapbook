@@ -6,12 +6,14 @@
 
 * 基於hash table來實作
 * 常見操作之時間複雜度為O\(1\) \(get and put\)
+* 無法保證key的順序性
 * 是一種non-thread safe collection
 
 ### TreeMap
 
 * 基於R-B tree\(紅黑樹\)來實作
 * 常見操作之時間複雜度為O\(logn\) \(containsKey, get, put and remove\)
+* 可以保證key的順序性
 * 是一種non-thread safe collection
 
 
