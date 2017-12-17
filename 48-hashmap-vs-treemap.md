@@ -19,8 +19,13 @@
 
 ### 重點
 
-* 若想要排序HashMap的內容, 可以在HashMap集合蒐集完資料後, 將其轉換成TreeMap, 可用TreeMap的putAll\(\)方法進行轉換:
+* 若想要排序HashMap的內容, 可以在HashMap集合蒐集完資料後, 將其轉換成TreeMap, 可用TreeMap的putAll\(\)或是constructor方法進行轉換:
   ```java
+  // putAll():
+  Map<K, V> treeMap = new TreeMap<>();
+  treeMap.putAll(hashMap);
+
+  // constructor:
   Map<K, V> treeMap = new TreeMap<>(hashMap);
   ```
 
@@ -240,7 +245,6 @@ public class MapTest {
     }
 
 }
-
 ```
 
 ### 參考資料
