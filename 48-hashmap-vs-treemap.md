@@ -5,14 +5,16 @@
 ### HashMap
 
 * 基於hash table來實作
-* 常見操作之時間複雜度為O\(1\)
-
+* 常見操作之時間複雜度為O\(1\) \(get and put\)
+* 
 ### TreeMap
 
 * 基於R-B tree\(紅黑樹\)來實作
+* 常見操作之時間複雜度為O\(logn\) \(containsKey, get, put and remove\)
 
-* 常見操作之時間複雜度為O\(logn\)
 
-* 
+
+
+
 
 
