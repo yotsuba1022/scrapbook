@@ -40,6 +40,7 @@
 * [4.4 Structured, Unstructured and Semi-structured Data](43-structured-unstructured-and-semi-structured-data.md)
 * [4.5 Shard v.s. Replica](45-shard-vs-replica.md)
 * [4.6 ArrayList v.s. LinkedList](46-arraylist-vs-linkedlist.md)
+* [4.7 HashSet v.s. TreeSet](47-hashset-vs-treeset.md)
 * [X. JVM](x.-jvm.md)
 * [X.1 JVM System Threads](x.1-jvm-system-threads.md)
 * [X.2 Garbage Collection](x.2-garbage-collection.md)
