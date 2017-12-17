@@ -19,7 +19,10 @@
 
 ### 重點
 
+* 一般如果不考慮排序的話, 就直接用HashMap吧
+
 * 若想要排序HashMap的內容, 可以在HashMap集合蒐集完資料後, 將其轉換成TreeMap, 可用TreeMap的putAll\(\)或是constructor方法進行轉換:
+
   ```java
   // putAll():
   Map<K, V> treeMap = new TreeMap<>();
