@@ -19,7 +19,7 @@
 * HashSet與TreeSet皆保證其中之元素不會重複\(duplicate-free, 參見Java doc對兩者的add\(\)之解釋\)
 * 一般來說, 把元素加入HashSet會比加入TreeSet要來得快, 可以在加入所有元素至HashSet之後, 再把這個HashSet轉成TreeSet.
   ```java
-  Set<String> convertedTreeSet = new TreeSet<String>(hashSet);
+  Set<String> convertedTreeSet = new TreeSet<>(hashSet);
   ```
 * 這兩種collection實作都不是thread safe的
 
@@ -157,8 +157,6 @@ public class SetTest {
 ```
 
 範例程式[點我](https://github.com/yotsuba1022/scjp/blob/master/src/test/java/idv/carl/scjp/collection/set/SetTest.java)
-
-
 
 ### 參考資料
 
