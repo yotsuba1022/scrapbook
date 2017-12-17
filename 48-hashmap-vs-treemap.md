@@ -7,13 +7,14 @@
 * 基於hash table來實作
 * 常見操作之時間複雜度為O\(1\) \(get and put\)
 * 無法保證key的順序性
+* 放入其中的元入必須確實地實作hashCode\(\)方法
 * 是一種non-thread safe collection
 
 ### TreeMap
 
 * 基於R-B tree\(紅黑樹\)來實作
 * 常見操作之時間複雜度為O\(logn\) \(containsKey, get, put and remove\)
-* 可以保證key的順序性
+* 可以保證key的順序性, 若沒有在建構期間指定comparator, 會使用natural ordering\(即被放入TreeMap的元素類別自身實作Comparable介面時定義的排序規則\)或是自訂的comparator
 * 是一種non-thread safe collection
 
 
