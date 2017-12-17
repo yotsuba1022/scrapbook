@@ -154,7 +154,6 @@ public class SetTest {
     }
 
 }
-
 ```
 
 範例程式[點我](https://github.com/yotsuba1022/scjp/blob/master/src/test/java/idv/carl/scjp/collection/set/SetTest.java)
