@@ -250,6 +250,8 @@ public class MapTest {
 }
 ```
 
+範例程式[點我](https://github.com/yotsuba1022/scjp/blob/master/src/test/java/idv/carl/scjp/collection/map/MapTest.java)
+
 ### 參考資料
 
 * HashMap Java Doc: [連結](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html)
