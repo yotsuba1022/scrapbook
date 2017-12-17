@@ -19,6 +19,8 @@
 
 ### 重點
 
+* 若想要排序HashMap的內容, 可以在HashMap集合蒐集完資料後, 將其轉換成TreeMap, 可用TreeMap的putAll\(\)方法進行轉換
+
 ### 範例
 
 ### 參考資料
