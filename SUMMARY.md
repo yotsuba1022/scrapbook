@@ -45,6 +45,4 @@
 * [X. JVM](x.-jvm.md)
 * [X.1 JVM System Threads](x.1-jvm-system-threads.md)
 * [X.2 Garbage Collection](x.2-garbage-collection.md)
-* [XX. 職涯](xx..md)
-* [XX.1 關於產業轉換](xx.1.md)
 
