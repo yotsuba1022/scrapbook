@@ -18,6 +18,7 @@
   * DB會對sql進行pre-compile處理\(前提是JDBC要支援\), 之後這個PreparedStatement被預先編譯好後, 就可以在未來的查詢中重複利用了, 這在需要多次查詢的時候, 基本上是比Statement物件生成的的查詢速度要來得快的, 以下是一個簡單的範例:
   * 在上面的範例中, 若還是使用PreparedStatement進行同樣的查詢, 儘管參數值不同, 譬如帶入其他銀行的名稱作為參數值, DB還是會去呼叫之前compiler已經compile過的執行語句
 * 基本上, 在實際工作場合中, 應該都是使用PreparedStatement的場合多於Statement, 以下是PreparedStatement的一些優勢:
+
   * 動態參數化查詢: 可以使用帶參數的sql語句, 通過使用相同的sql搭配不同的參數來做查詢, 總比建立一個不同的語句要來得好. 這個部分有另一個名詞叫做"[同構\(isomorphism\)](https://zh.wikipedia.org/wiki/同构)", 基本上PreparedStatement也是在解決同構問題.
   * 比Statement快: 因為PreparedStatement會被pre-compile在DBMS中, 使用時一般來說會比普通的查詢更快, 做的工作也更少\(因為DB對這個語句的分析/編譯/最佳化已經在第一次查詢之前就完成了\). 這也是為什麼在production環境中, 使用PreparedStatement會比Statement更好的原因之一 --- 不要讓你的DB不開心或是有太多額外的負擔, 不然你遲早會倒大楣.
   * 另外要注意的一點就是: 為了獲得性能上的優勢, 應該盡量使用參數化sql而不是使用字串連接的方式, 以下是兩個範例:
@@ -68,7 +69,7 @@
     * ```java
       userName = " 1' OR 1=1";
       ```
-    *  然後我們可以把一個單引號替換成兩個單引號:
+    * 然後我們可以把一個單引號替換成兩個單引號:
 
     * ```java
       userName = " 1'' OR 1=1";
@@ -81,6 +82,7 @@
     * 所以DB會去找name = "1'' OR 1=1"的紀錄, 從而避免了攻擊.
 
   * 比起散亂的字串連結查詢, PreparedStatement可讀性更高, 也比較安全.
+
 * 雖然這樣看起來, PreparedStatement好像很不錯, 但其還是有一定的限制存在, 例如為了防止SQL Injection, 其不允許一個"?"參數裡包含多個值, 若你的查詢子句裡面使用到了"in\(xxx,xxx...\)"這種東西的話, 就有點麻煩了, 譬如下面這段SQL就不會回傳結果:
 
   * ```java
