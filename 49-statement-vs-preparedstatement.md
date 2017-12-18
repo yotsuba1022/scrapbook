@@ -5,9 +5,9 @@
 ### Statement
 
 * 通常用於執行靜態的SQL語句並且獲得SQL產生之結果, 通常會看到以下三種執行SQL語句的方法:
-  * executeUpdate\(String sql\)
-  * executeQuery\(String sql\)
-  * execute\(String sql\)
+  * executeUpdate\(String sql\): 執行SQL insert/update/delete語句, 回傳受影響資料的數目或是0
+  * executeQuery\(String sql\): 執行回傳單個ResultSet的SQL語句, 回傳類型就是ResultSet
+  * execute\(String sql\): 執行可以回傳多個結果的SQL語句, 回傳類型是boolean, 若回傳的是更新的數目, 就回傳false, 若是ResultSet, 則回傳true
 
 ### PreparedStatement
 
