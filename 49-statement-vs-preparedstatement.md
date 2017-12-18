@@ -19,9 +19,9 @@
   * 在上面的範例中, 若還是使用PreparedStatement進行同樣的查詢, 儘管參數值不同, 譬如帶入其他銀行的名稱作為參數值, DB還是會去呼叫之前compiler已經compile過的執行語句
 * 基本上, 在實際工作場合中, 應該都是使用PreparedStatement的場合多於Statement, 以下是PreparedStatement的一些優勢:
 
-  * 動態參數化查詢: 可以使用帶參數的sql語句, 通過使用相同的sql搭配不同的參數來做查詢, 總比建立一個不同的語句要來得好. 這個部分有另一個名詞叫做"[同構\(isomorphism\)](https://zh.wikipedia.org/wiki/同构)", 基本上PreparedStatement也是在解決同構問題.
-  * 比Statement快: 因為PreparedStatement會被pre-compile在DBMS中, 使用時一般來說會比普通的查詢更快, 做的工作也更少\(因為DB對這個語句的分析/編譯/最佳化已經在第一次查詢之前就完成了\). 這也是為什麼在production環境中, 使用PreparedStatement會比Statement更好的原因之一 --- 不要讓你的DB不開心或是有太多額外的負擔, 不然你遲早會倒大楣.
-  * 另外要注意的一點就是: 為了獲得性能上的優勢, 應該盡量使用參數化sql而不是使用字串連接的方式, 以下是兩個範例:
+  * **動態參數化查詢**: 可以使用帶參數的sql語句, 通過使用相同的sql搭配不同的參數來做查詢, 總比建立一個不同的語句要來得好. 這個部分有另一個名詞叫做"[同構\(isomorphism\)](https://zh.wikipedia.org/wiki/同构)", 基本上PreparedStatement也是在解決同構問題.
+  * **比Statement快**: 因為PreparedStatement會被pre-compile在DBMS中, 使用時一般來說會比普通的查詢更快, 做的工作也更少\(因為DB對這個語句的分析/編譯/最佳化已經在第一次查詢之前就完成了\). 這也是為什麼在production環境中, 使用PreparedStatement會比Statement更好的原因之一 --- **不要讓你的DB不開心或是有太多額外的負擔, 不然你遲早會倒大楣**.
+  * 另外要注意的一點就是: 為了獲得性能上的優勢, 應該**盡量使用參數化sql而不是使用字串連接的方式**, 以下是兩個範例:
     * SQL1: 用字串連接的方式
       ```java
       String loanType = getLoanType();
@@ -32,7 +32,7 @@
       PreparedStatement prestmt = conn.prepareStatement("select banks from billing where billing_type = ?");
       prestmt.setString(1, billingType);
       ```
-  * 可以防止SQL Injection攻擊:
+  * **可以防止SQL Injection攻擊**:
 
     * 以下是一個很老梗的case,  某個網站驗證登入的SQL可能長這副樣子:
 
