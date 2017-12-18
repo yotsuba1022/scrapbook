@@ -42,7 +42,7 @@
 * [4.6 ArrayList v.s. LinkedList](46-arraylist-vs-linkedlist.md)
 * [4.7 HashSet v.s. TreeSet](47-hashset-vs-treeset.md)
 * [4.8 HashMap v.s. TreeMap](48-hashmap-vs-treemap.md)
-* [4.9 Statement v.s. PreparedStatement](49-statement-vs-preparedstatement.md)
+* [4.9 Statement, PreparedStatement and CallableStatement](49-statement-vs-preparedstatement.md)
 * [X. JVM](x.-jvm.md)
 * [X.1 JVM System Threads](x.1-jvm-system-threads.md)
 * [X.2 Garbage Collection](x.2-garbage-collection.md)
