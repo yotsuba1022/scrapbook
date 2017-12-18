@@ -1,6 +1,6 @@
 # Statement, PreparedStatement and CallableStatement
 
-在JDBC的世界裡, 我們常常會透過Statement/PreparedStatement來對DB進行一些操作, 這篇主要是想記錄一下這兩者之間的差異.
+在JDBC的世界裡, 我們常常會透過Statement/PreparedStatement來對DB進行一些操作, 這篇主要是想記錄一下這兩者之間的差異\(CallableStatement我沒用過, 以後有機會再補吧\).
 
 ### Statement
 
@@ -92,6 +92,7 @@
   * 解法可以參考這篇: [點我](https://stackoverflow.com/questions/178479/preparedstatement-in-clause-alternatives)
 
 * PreparedStatement跟java.sql.Connection是相關聯的, 記得用完PreparedStatement之後再關閉connection, 不然PreparedStatement就不能用了.
+
 * 參數"?"的索引位置是從1開始不是從0開始, 你如果寫0會拋出"java.sql.SQLException invalid column index"這種exception.
 
 ### CallableStatement
