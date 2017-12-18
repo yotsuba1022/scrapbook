@@ -13,6 +13,7 @@
 
 * 相較於Statement, PreparedStatement是一種pre-compiled語句, 可以使用預留位置\("?"\)替SQL帶入變數值, 講白一點, 就是允許你使用參數化查詢.
 * PreparedStatement基本上是java.sql package下的一個介面, 用來執行SQL語句, 常見的使用起手式如下:
+
   * ```java
     public class PreparedStatementDemo {
         public static void main(String args[]) throws SQLException {
@@ -22,17 +23,21 @@
 
             preparedStatement.setString(1, "Citibank");
             ResultSet result = preparedStatement.executeQuery();
- 
+
             while(result.next()){
                 System.out.println("Billing Type: " + result.getString("billing_type"));
             }       
         }
     }
     ```
+
 * * 透過DriverManager取得connection
   * 透過呼叫connection.preparedStatement\(sql\)獲得PreparedStatement物件
   * DB會對sql進行pre-compile處理\(前提是JDBC要支援\), 之後這個PreparedStatement被預先編譯好後, 就可以在未來的查詢中重複利用了, 這在需要多次查詢的時候, 基本上是比Statement物件生成的的查詢速度要來得快的, 以下是一個簡單的範例:
   * 在上面的範例中, 若還是使用PreparedStatement進行同樣的查詢, 儘管參數值不同, 譬如帶入其他銀行的名稱作為參數值, DB還是會去呼叫之前compiler已經compile過的執行語句
+
+
+
 * 基本上, 在實際工作場合中, 應該都是使用PreparedStatement的場合多於Statement, 以下是PreparedStatement的一些優勢:
 
   * **動態參數化查詢**: 可以使用帶參數的sql語句, 通過使用相同的sql搭配不同的參數來做查詢, 總比建立一個不同的語句要來得好. 這個部分有另一個名詞叫做"[同構\(isomorphism\)](https://zh.wikipedia.org/wiki/同构)", 基本上PreparedStatement也是在解決同構問題.
