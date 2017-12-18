@@ -110,8 +110,6 @@
     ```
   * 解法可以參考這篇: [點我](https://stackoverflow.com/questions/178479/preparedstatement-in-clause-alternatives)
 
-
-
 * PreparedStatement跟java.sql.Connection是相關聯的, 記得用完PreparedStatement之後再關閉connection, 不然PreparedStatement就不能用了.
 
 * 預留位置"?"的索引位置是從1開始不是從0開始, 你如果寫0會拋出"java.sql.SQLException invalid column index"這種exception.
