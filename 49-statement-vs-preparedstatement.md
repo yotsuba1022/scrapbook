@@ -11,7 +11,7 @@
 
 ### PreparedStatement
 
-* 相較於Statement, PreparedStatement是一種pre-compiled語句, 可以使用預留位置替SQL帶入變數值, 講白一點, 就是允許你使用參數化查詢.
+* 相較於Statement, PreparedStatement是一種pre-compiled語句, 可以使用預留位置\("?"\)替SQL帶入變數值, 講白一點, 就是允許你使用參數化查詢.
 * PreparedStatement基本上是java.sql package下的一個介面, 用來執行SQL語句, 常見的使用起手式如下:
   * 透過DriverManager取得connection
   * 透過呼叫connection.preparedStatement\(sql\)獲得PreparedStatement物件
@@ -93,7 +93,7 @@
 
 * PreparedStatement跟java.sql.Connection是相關聯的, 記得用完PreparedStatement之後再關閉connection, 不然PreparedStatement就不能用了.
 
-* 參數"?"的索引位置是從1開始不是從0開始, 你如果寫0會拋出"java.sql.SQLException invalid column index"這種exception.
+* 預留位置"?"的索引位置是從1開始不是從0開始, 你如果寫0會拋出"java.sql.SQLException invalid column index"這種exception.
 
 ### CallableStatement
 
