@@ -45,6 +45,7 @@
 * [4.9 ArrayList v.s. Vector](49-arraylist-vs-vector.md)
 * [4.10 HashMap v.s. HashTable](410-hashmap-vs-hashtable.md)
 * [4.11 Statement, PreparedStatement and CallableStatement](49-statement-vs-preparedstatement.md)
+* [4.12 Overflow of Digits](412-overflow-of-digits.md)
 * [X. JVM](x.-jvm.md)
 * [X.1 JVM System Threads](x.1-jvm-system-threads.md)
 * [X.2 Garbage Collection](x.2-garbage-collection.md)
