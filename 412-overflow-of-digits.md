@@ -2,10 +2,10 @@
 
 在處理數字的時候, 有一個很重要的議題是要處理溢位\(overflow\)問題, 首先, 先來看一下若是在32位元的情境下, 我們對10進位整數的基本定義:
 
-* **32-bit unsigned integer**: 即32-bit無號整數, 其範圍是 0 ~ \(2^32\)-1, 即 0~4,294,967,295 
+* **32-bit unsigned integer**: 即32-bit無號整數, 其範圍是 0 ~ \(2^32\)-1, 即 0~4,294,967,295   
   -&gt; \(2^32\)-1中, -1的原因是因為我們要從0開始算, 而非從1開始.
 
-* **32-bit signed integer**: 即32-bit有號整數, -\(2^31\) ~ \(2^31\)-1, 即 -2,147,483,648 ~ 2,147,483,647
+* **32-bit signed integer**: 即32-bit有號整數, -\(2^31\) ~ \(2^31\)-1, 即 -2,147,483,648 ~ 2,147,483,647  
   -&gt; 這邊是31次方而不是32次方是因為有號\(signed\)整數要同時紀錄正/負數的範圍, 其會各佔掉一半的空間, 所以相較於無號整數, 其最大值只有一半而已\(即少了2的一次方\), 上限-1的原因也是一樣要包含0.
 
 ### 關於Overflow
@@ -13,11 +13,48 @@
 有了前面的定義, 我們就可以來看overflow了, 在32-bit的作業系統上, 記憶體只能記錄上述範圍的數字, 若超過了這個範圍, 記憶體就無法正常處理了, 這就是所謂的overflow. 這邊用簡單的例子來看一下overflow的特性:
 
 * 32-bit signed integer overflow:
-  * 2,147,483,647 + 1 = -2,147,483,648
+
+  * 2,147,483,647 + 1 = -2,147,483,648  
     由於前者已經是最大值了, 所以這時候若再+1, 會繞一圈回到最小值.
 
-  * -2,147,483,648 - 2 = 2,147,483,646
+  * -2,147,483,648 - 2 = 2,147,483,646  
     同前一個情況, 你如果把最小值拿來-1, 就會繞回最大值, -2就會是最大值-1.
+
+### 處理Overflow
+
+這邊對overflow的處理方式, 是針對LeetCode中的Reverse Integer這個題目的解法用的, 但也是可以在其他不同的context下當作一個借鏡.
+
+在這個題目中, 我們設定若發生overflow的話, 就要return 0, 其判斷overflow的邏輯大概長得像這樣:
+
+```java
+private final static int MAX_32_BIT_INTEGER = ( (int) Math.pow(2, 31) ) - 1; // 2,147,483,647
+private final static int MIN_32_BIT_INTEGER = -(int) Math.pow(2, 31); // -2,147,483,648
+
+public static int optimizedReverseInteger(int input) {
+        int result = 0;
+        while (input != 0) {
+            if (result > MAX_32_BIT_INTEGER / 10 ||                           // ... overflow scenario 1
+                result < MIN_32_BIT_INTEGER / 10 ||                           // ... overflow scenario 2
+                ( result == MAX_32_BIT_INTEGER / 10 && (input % 10 > 7 ) ) || // ... overflow scenario 3
+                result == MIN_32_BIT_INTEGER / 10 && ( input % 10 < -8 )) {   // ... overflow scenario 4
+                return 0;
+            }
+            result = ( result * 10 ) + ( input % 10 );
+            input /= 10;
+        }
+        return result;
+}
+```
+
+這邊處理的方式大概分兩個面向, 四種情況:
+
+* Scenario1 \(正數, 且擺明會爆掉\): 假如result大於214748364, 譬如是214748365, 這時候碰到result \* 10的時候, 就會變成2147483650, 就超過最大值2147483647了. 這是第一種會overflow的情形.
+
+* Scenario2 \(負數, 且擺明會爆掉\): 若result小於-214748364, 譬如-214748365, 若遇到result \* 10, 就會變成-2147483650, 就小於最小值-2147483648了. 這是第二種會overflow的情形.
+
+* Scenario3 \(正數, 但在爆掉邊緣\): 前兩種是擺明就會直接爆掉的, 再來若result剛好等於214748364, 這時result \* 10, 是剛好逼近最大值沒有爆掉\(2147483640\), 但這時若碰到加上\(input % 10\)的內容剛好大於7的話 \(例如8\), 就會變成2147483640 + 8 = 2147483648, 就又爆了.
+
+* Scenario4 \(負數, 但在爆掉邊緣\): 最後一種, 若result剛好等於-214748364, 這時result \* 10, 剛好達到-2147483640, 接近爆掉的範圍, 此時若\(input % 10\)的值小於8的話 \(如-9\), 就會變成-2147483649, 就爆了.
 
 
 
