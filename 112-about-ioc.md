@@ -1,4 +1,4 @@
-# Invesion of Control
+# Inversion of Control
 
 IoC, 又稱控制反轉, 是一種提供配置元件\(component\)相依性與管理相依性的機制. 而IoC其實又可以分為下列幾種:
 
