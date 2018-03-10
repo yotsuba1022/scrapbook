@@ -51,7 +51,7 @@ public interface ManagedComponent {
 }
 ```
 
-當實作了這個介面之後, component就可以跟container說: "我想要獲得某些dependency". 至於container, 通常會是由底層的appication server, 如Tomcat, JBoss等等或著是如Spring這類的framework來提供的, 而這些container通常都會提供跟dependency lookup service有關的介面:
+當實作了這個介面之後, component就可以跟container說: "我想要獲得某些dependency". 至於container, 通常會是由底層的application server, 如Tomcat, JBoss等等或著是如Spring這類的framework來提供的, 而這些container通常都會提供跟dependency lookup service有關的介面:
 
 ```java
 public interface Container {
